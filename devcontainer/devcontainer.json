@@ -1,0 +1,31 @@
+{
+  "name": "java-logic-udemy",
+  "image": "mcr.microsoft.com/devcontainers/java:0-17",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.bracketPairColorization.enabled": true,
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-17",
+        "path": "/usr/local/sdkman/candidates/java/current"
+      }
+    ]
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "sonarsource.sonarlint-vscode",
+        "shengchen.vscode-checkstyle",
+        "coenraads.bracket-pair-colorizer-2",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}
