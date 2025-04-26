@@ -5,75 +5,72 @@
             "public static void main(String[] args) {",
             "    $0",
             "}"
-        ],
-        "description": "Cria estrutura padrão do método main em Java"
+        ]
     },
     "exercise template": {
         "prefix": "exercise",
         "body": [
             "package com.thalisson.exercises;",
             "",
+            "import java.util.Scanner;",
+            "",
             "public class ${TM_FILENAME_BASE} {",
             "    public static void main(String[] args) {",
+            "        Scanner scanner = new Scanner(System.in);",
+            "        ",
             "        $0",
+            "        ",
+            "        scanner.close();",
             "    }",
             "}"
-        ],
-        "description": "Template para novo exercício"
+        ]
     },
     "scanner int": {
         "prefix": "sint",
         "body": [
-            "Scanner scanner = new Scanner(System.in);",
             "int ${1:nInt} = scanner.nextInt();"
-        ],
-        "description": "Scanner para número inteiro"
+        ]
     },
     "scanner float": {
         "prefix": "sfloat",
         "body": [
-            "Scanner scanner = new Scanner(System.in);",
             "float ${1:nFloat} = scanner.nextFloat();"
-        ],
-        "description": "Scanner para número float"
+        ]
     },
     "scanner char": {
         "prefix": "schar",
         "body": [
-            "Scanner scanner = new Scanner(System.in);",
             "char ${1:nChar} = scanner.nextLine().charAt(0);"
-        ],
-        "description": "Scanner para capturar um único caractere"
+        ]
     },
     "scanner string": {
         "prefix": "sstring",
         "body": [
-            "Scanner scanner = new Scanner(System.in);",
             "String ${1:nString} = scanner.nextLine();"
-        ],
-        "description": "Scanner para texto (string)"
+        ]
     },
     "soutf printf": {
         "prefix": "sysf",
         "body": [
             "System.out.printf(\"$1\", $2);"
-        ],
-        "description": "System.out.printf snippet"
+        ]
+    },
+    "soutp print": {
+        "prefix": "sysp",
+        "body": [
+            "System.out.print(\"$1\");"
+        ]
     },
     "scanner double": {
         "prefix": "sdouble",
         "body": [
-            "Scanner scanner = new Scanner(System.in);",
             "double ${1:nDouble} = scanner.nextDouble();"
-        ],
-        "description": "Scanner para número double"
+        ]
     },
     "scanner boolean": {
         "prefix": "sboolean",
         "body": [
-            "Scanner scanner = new Scanner(System.in);",
             "boolean ${1:nBoolean} = scanner.nextBoolean();"
-        ],
-        "description": "Scanner para valor booleano"
+        ]
     }
 }
