@@ -20,5 +20,44 @@
             "}"
         ],
         "description": "Template para novo exercício"
+    },
+    "scanner int": {
+        "prefix": "sint",
+        "body": [
+            "Scanner scanner = new Scanner(System.in);",
+            "int ${1:numero} = scanner.nextInt();"
+        ],
+        "description": "Scanner para número inteiro"
+    },
+    "scanner float": {
+        "prefix": "sfloat",
+        "body": [
+            "Scanner scanner = new Scanner(System.in);",
+            "float ${1:numero} = scanner.nextFloat();"
+        ],
+        "description": "Scanner para número float"
+    },
+    "scanner char": {
+        "prefix": "schar",
+        "body": [
+            "Scanner scanner = new Scanner(System.in);",
+            "char ${1:letra} = scanner.nextLine().charAt(0);"
+        ],
+        "description": "Scanner para capturar um único caractere"
+    },
+    "scanner string": {
+        "prefix": "sstring",
+        "body": [
+            "Scanner scanner = new Scanner(System.in);",
+            "String ${1:texto} = scanner.nextLine();"
+        ],
+        "description": "Scanner para texto (string)"
+    },
+    "soutf printf": {
+        "prefix": "sysf",
+        "body": [
+            "System.out.printf(\"$1\", $2);"
+        ],
+        "description": "System.out.printf snippet"
     }
 }
