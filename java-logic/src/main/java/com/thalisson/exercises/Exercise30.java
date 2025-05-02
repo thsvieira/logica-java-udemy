@@ -100,5 +100,6 @@ public class Exercise30 {
         }
         
         System.out.printf("\nHoje é %s do dia %d de %s de %d.\n", dayOfTheWeek, nInt, month, n3int);
+        scanner.close();
     }
 }
